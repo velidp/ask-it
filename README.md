@@ -24,7 +24,7 @@
 <hr/>
 
 
-#### App is deployed at:  https://ask-it-mop-task.netlify.app/
+#### App is live at:  https://ask-it-mop-task.netlify.app/
 
 
 ### Built With
