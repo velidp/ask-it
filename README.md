@@ -55,7 +55,7 @@ git clone https://github.com/velidp/ask-it.git
 #### Run frontend
 ```
 # Move to the project frontend folder
-cd frontend
+cd client
 
 # in src/api/index.js file change API from heroku to http://localhost: + PORT on which backend will run
 
@@ -70,7 +70,7 @@ npm start
 ```
 # In another terminal
 # Move to the project backend folder
-cd backend
+cd server
 
 
 # install dependencies
