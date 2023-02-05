@@ -70,7 +70,7 @@ npm start
 ```
 # In another terminal
 # Move to the project backend folder
-cd backend
+cd server
 
 
 # install dependencies
