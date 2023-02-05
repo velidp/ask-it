@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Paper, Button, Grid, Avatar, TextField, Typography, Link } from '@mui/material';
 import useStyles from './styles';
 import LockIcon from '@mui/icons-material/Lock';
-import { signin, signup} from '../../actions/auth';
+import { signin, signup} from '../../Actions/Auth';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 

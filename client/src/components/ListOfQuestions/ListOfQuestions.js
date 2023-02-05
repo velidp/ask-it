@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Typography } from '@mui/material';
-import Question from '../question/question';
+import Question from '../Question/Question';
 import useStyles from './styles';
 import LinearProgress from '@mui/material/LinearProgress';
 import FiberNewIcon from '@mui/icons-material/FiberNew';

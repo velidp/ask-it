@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import ListOfQuestions from '../../listOfQuestions/listOfQuestions';
+import ListOfQuestions from '../../ListOfQuestions/ListOfQuestions';
 import { Paper } from '@mui/material';
 import useStyles from './styles';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import { myQuestions } from '../../../actions/questions';
+import { myQuestions } from '../../../Actions/Questions';
 
 function MyQuestions() {
 

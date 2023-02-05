@@ -1,4 +1,4 @@
-import { GET_QUESTIONS, HOT_QUESTIONS, MY_QUESTIONS, LIKE_QUESTIONS, CREATE_QUESTIONS } from "../constants/actionTypes"; 
+import { GET_QUESTIONS, HOT_QUESTIONS, MY_QUESTIONS, LIKE_QUESTIONS, CREATE_QUESTIONS } from "../Constants/actionTypes"; 
 
 const defaultState = {
     myQuestions: [],

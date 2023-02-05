@@ -1,5 +1,5 @@
-import * as api from '../api';
-import { DELETE_ANSWER, UPDATE_ANSWER, CREATE_ANSWER, LIKE_ANSWER } from '../constants/actionTypes';
+import * as api from '../Api';
+import { DELETE_ANSWER, UPDATE_ANSWER, CREATE_ANSWER, LIKE_ANSWER } from '../Constants/actionTypes';
 
 export const deleteAnswer = (id) => async (dispatch) => {
 

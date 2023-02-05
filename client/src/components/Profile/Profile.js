@@ -1,7 +1,7 @@
 import { Avatar, Paper, Typography, Button, Grid, Link } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import useStyles from './styles';
-import Form from './form/form';
+import Form from './Form/Form';
 import { useNavigate } from 'react-router-dom';
 
 

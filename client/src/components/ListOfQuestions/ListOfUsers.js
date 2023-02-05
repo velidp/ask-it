@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Typography, LinearProgress } from '@mui/material';
 import useStyles from './styles';
-import User from '../userCard/userCard';
+import User from '../UserCard/UserCard';
 import { useDispatch, useSelector } from 'react-redux';
-import { topUsers } from '../../actions/auth';
+import { topUsers } from '../../Actions/Auth';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 
 function ListOfUsers() {

@@ -1,16 +1,16 @@
 import './App.css';
 import { useState } from 'react';
-import Header from './components/header/header';
-import Home from './components/home/home';
-import Profile from './components/profile/profile';
-import Auth from './components/auth/auth';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import Profile from './components/Profile/Profile';
+import Auth from './components/Auth/Auth';
 import {
   BrowserRouter as Router,
   Routes,
   Route
 } from 'react-router-dom';
-import MyQuestions from './components/profile/myQuestions/myQuestions';
-import Questions from './components/questions/questions';
+import MyQuestions from './components/Profile/myQuestions/myQuestions';
+import Questions from './components/Question/Question';
 
 function App() {
 

@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { Paper, Typography, Button, TextField, Avatar, Grid } from '@mui/material';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import useStyles from './styles';
-import Answer from './answer/answer';
-import { createAnswer } from '../../actions/answers';
+import Answer from './Answer/Answer';
+import { createAnswer } from '../../Actions/answers';
 import { useDispatch } from 'react-redux';
-import { likeQuestion, myQuestions, getQuestions, hotQuestions } from '../../actions/questions';
+import { likeQuestion, myQuestions, getQuestions, hotQuestions } from '../../Actions/Questions';
 
 
 function Question({question, typeOfList}) {
@@ -60,14 +60,14 @@ function Question({question, typeOfList}) {
   
     return (
         <Paper elevation={3} className={classes.paper}>
-            <Typography variant='h5'>{question.question}</Typography>
+            <Typography variant='h5'>{question?.question}</Typography>
 
             <Grid className={classes.user} container direction='row'>
-                <Avatar sx={{ bgcolor: '#34568B', height: '32px', width: '32px' }}>{question.first_name.charAt(0)}</Avatar>
-                <Typography className={classes.fullName} variant='body2'>{question.first_name} {question.last_name}</Typography>
+                <Avatar sx={{ bgcolor: '#34568B', height: '32px', width: '32px' }}>{question?.first_name.charAt(0)}</Avatar>
+                <Typography className={classes.fullName} variant='body2'>{question?.first_name} {question?.last_name}</Typography>
             </Grid>
             
-            <Button disabled={user ? false : true} onClick={() => {handleLike()}} className={classes.btn}><ThumbUpIcon /> &nbsp; {question.count} </Button>
+            <Button disabled={user ? false : true} onClick={() => {handleLike()}} className={classes.btn}><ThumbUpIcon /> &nbsp; {question?.count} </Button>
             
                     <Button onClick={() => setShowAnswer(!showAnswers)}>{ showAnswers ? 'Colapsse answers' : 'Show answers' }</Button>
                     { showAnswers ? 

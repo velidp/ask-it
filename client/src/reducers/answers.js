@@ -1,4 +1,4 @@
-import { DELETE_ANSWER, UPDATE_ANSWER, LIKE_ANSWER, CREATE_ANSWER } from '../constants/actionTypes'; 
+import { DELETE_ANSWER, UPDATE_ANSWER, LIKE_ANSWER, CREATE_ANSWER } from '../Constants/actionTypes'; 
 
 
 

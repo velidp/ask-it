@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Grid, Paper, TextField, Typography } from '@mui/material';
 import useStyles from './styles';
 import { useDispatch } from 'react-redux';
-import { updateUser } from '../../../actions/auth';
+import { updateUser } from '../../../Actions/Auth';
 
 function Form({ setShowForm, setUserUpdate, userUpdate }) {
 

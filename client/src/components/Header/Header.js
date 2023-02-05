@@ -63,9 +63,8 @@ function Header({userUpdate}) {
                 <Typography style={{cursor: 'pointer', marginRight: 10}} onClick={() => navigate('/')} variant='h6' component='div'>Ask It</Typography>  
                 
                 <Grid sx={{ flexGrow: 1 }}>
-                  <Button style={{ marginLeft: 40 }} onClick={() => navigate('/questions')} color='inherit'>Questions</Button>
+                  {/*<Button style={{ marginLeft: 40 }} onClick={() => navigate('/questions')} color='inherit'>Questions</Button>*/}
                 </Grid>
-
 
                 {(() => {
                   if(user && location.pathname !== '/auth') { 

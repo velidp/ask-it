@@ -24,7 +24,7 @@ function Questions() {
   return (
     
         <Paper className={classes.container} elevation={3}>
-            <ListOfQuestions typeOfList='newQuestions' questions={newquestions} heading='All questions' ></ListOfQuestions>
+            <ListOfQuestions typeOfList='hotQuestions' questions={newquestions} heading='All questions' ></ListOfQuestions>
         </Paper>
 
     );

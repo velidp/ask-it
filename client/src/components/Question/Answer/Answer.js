@@ -3,9 +3,9 @@ import { Typography, Button, Divider, TextField, Grid, Avatar } from '@mui/mater
 import useStyles from './styles';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import { useDispatch } from 'react-redux';
-import { deleteAnswer, updateAnswer } from '../../../actions/answers';
-import { myQuestions, getQuestions, hotQuestions } from '../../../actions/questions';
-import { likeAnswer } from '../../../actions/answers'
+import { deleteAnswer, updateAnswer } from '../../../Actions/answers';
+import { myQuestions, getQuestions, hotQuestions } from '../../../Actions/Questions';
+import { likeAnswer } from '../../../Actions/answers'
 
 function Answer({ answer, typeOfList }) {
 

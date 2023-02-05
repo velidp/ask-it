@@ -1,5 +1,5 @@
-import * as api from '../api';
-import { AUTH, GET_NOTIFICATIONS, TOP_USERS, UPDATE_USER } from '../constants/actionTypes';
+import * as api from '../Api';
+import { AUTH, GET_NOTIFICATIONS, TOP_USERS, UPDATE_USER } from '../Constants/actionTypes';
 
 
 export const signin = (formData, navigate, setWrongPassword, setWrongEmail) => async (dispatch) => {

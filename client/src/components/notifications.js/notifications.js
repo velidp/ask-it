@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getNotifications } from '../../actions/auth';
+import { getNotifications } from '../../Actions/Auth';
 import { useDispatch, useSelector } from 'react-redux';
 import Notification from './notification/notification';
 import { Typography, Paper } from '@mui/material';

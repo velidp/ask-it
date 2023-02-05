@@ -1,4 +1,4 @@
-import { AUTH, LOGOUT, UPDATE_USER, TOP_USERS, GET_NOTIFICATIONS } from '../constants/actionTypes';
+import { AUTH, LOGOUT, UPDATE_USER, TOP_USERS, GET_NOTIFICATIONS } from '../Constants/actionTypes';
 
 const defaultState = {
     authData: [],

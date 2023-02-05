@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { Grid, Paper, TextField, Button } from '@mui/material';
 import { useSelector } from 'react-redux';
 import useStyles from './styles';
-import ListOfQuestions from '../listOfQuestions/listOfQuestions';
-import ListOfUsers from '../listOfQuestions/listOfUsers';
+import ListOfQuestions from '../ListOfQuestions/ListOfQuestions';
+import ListOfUsers from '../ListOfQuestions/ListOfUsers';
 import { useDispatch } from 'react-redux';
-import { getQuestions, hotQuestions, createQuestion } from '../../actions/questions';
+import { getQuestions, hotQuestions, createQuestion } from '../../Actions/Questions';
 
 
 function Home() {
@@ -42,7 +42,7 @@ function Home() {
                         <form id='askForm' onSubmit={handleSubmit}>
                             <Grid container direction='row' spacing={2}>
                                 <Grid item xs={10}>
-                                    <TextField onChange={(e) => {setInputValue(e.target.value)}} required fullWidth className={classes.inputAnswer} fullWidth label='Ask something'></TextField>
+                                    <TextField onChange={(e) => {setInputValue(e.target.value)}} required fullWidth className={classes.inputAnswer} label='Ask something'></TextField>
                                 </Grid>
                                 <Grid item>
                                     <Button type='submit' className={classes.btn}>Post Question</Button>

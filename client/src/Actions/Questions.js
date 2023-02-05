@@ -1,11 +1,12 @@
-import * as api from '../api';
-import { GET_QUESTIONS, MY_QUESTIONS, HOT_QUESTIONS, LIKE_QUESTIONS, CREATE_QUESTIONS } from '../constants/actionTypes';
+import * as api from '../Api';
+import { GET_QUESTIONS, MY_QUESTIONS, HOT_QUESTIONS, LIKE_QUESTIONS, CREATE_QUESTIONS } from '../Constants/actionTypes';
 
 export const getQuestions = () => async (dispatch) => {
 
     try {
         const { data } = await api.getQuestions();
         dispatch({type: GET_QUESTIONS, payload: data}); 
+        console.log("Sva pitanja valjda: " + JSON.stringify(data));
     } catch (error) {
         console.log(error.message);
     }
