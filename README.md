@@ -65,6 +65,29 @@ npm install
 # start local development server and watch for changes
 npm start
 ```
+  
+#### Create db.js file with database credentials:
+```
+const Pool = require('pg').Pool;
+
+const pool = new Pool({
+
+      user: '',
+      host: '',
+      database: '',
+      password: '',
+      
+
+    connectionString: '',
+    ssl: {
+      rejectUnauthorized: false
+    }
+  });
+
+module.exports = pool;
+
+```
+  
 
 #### Run backend
 ```
