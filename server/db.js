@@ -1,17 +1,15 @@
-const Pool = require('pg').Pool;
+const { Pool } = require('pg');
+require('dotenv').config();
 
 const pool = new Pool({
-
-      user: 'ask_it_user',
-      host: 'dpg-cffommo2i3mg6p9f3r70-a',
-      database: 'ask_it',
-      password: 'FtS5tsFxL64wi2uZGxAVfgd5lxPN1jMM',
-      
-
-    connectionString: 'postgres://ask_it_user:FtS5tsFxL64wi2uZGxAVfgd5lxPN1jMM@dpg-cffommo2i3mg6p9f3r70-a.oregon-postgres.render.com/ask_it',
-    ssl: {
-      rejectUnauthorized: false
-    }
-  });
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME,
+  password: process.env.DB_PASSWORD,
+  connectionString: process.env.DB_CONNECTION_STRING,
+  ssl: {
+    rejectUnauthorized: process.env.DB_SSL_REJECT_UNAUTHORIZED === 'true',
+  },
+});
 
 module.exports = pool;
