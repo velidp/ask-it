@@ -17,14 +17,14 @@
     ·
     <a target="_blank" href="https://github.com/velidp/ask-it/issues">Report Bug</a>
     ·
-    <a target="_blank" href="https://ask-it-mop-task.netlify.app/">Deployment</a>
+    <a target="_blank" href="https://ask-it-mop.netlify.app/">Deployment</a>
   </p>
 </div>
 
 <hr/>
 
 
-#### App is live at:  https://ask-it-mop-task.netlify.app/
+#### App is live at:  https://ask-it-mop.netlify.app/
 
 
 ### Built With
